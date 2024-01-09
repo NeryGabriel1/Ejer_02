@@ -22,7 +22,7 @@ public class Cajero {
 	public void eliminarCuenta(String id, String password) {
 		int indexCuenta = verificarCuenta(id, password);
 
-		if (indexCuenta != -1) {
+		if (indexCuenta != -1 && !cuentas.isEmpty()) {
 			cuentas.remove(indexCuenta);
 		}
 
